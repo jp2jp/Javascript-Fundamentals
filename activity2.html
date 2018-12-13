@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JavaScript program to calculate multiplication and division of two numbers </title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function multiplyBy(fNum, sNum, result) {
+            var firstNum = fNum.value;
+            var secondNum = sNum.value;
+            result.innerHTML = firstNum * secondNum;
+        }
+        function divideBy(fNum, sNum) {
+            var firstNum = fNum.value;
+            var secondNum = sNum.value;
+            result.innerHTML = firstNum / secondNum;
+        }
+    </script>
+
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy(firstNumber, secondNumber, result)" Value="Multiply" />
+        <input type="button" onClick="divideBy(firstNumber, secondNumber, result)" Value="Divide" />
+    </form>
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+</body>
+
+</html>
